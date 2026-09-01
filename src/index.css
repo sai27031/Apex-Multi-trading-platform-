@@ -1,0 +1,96 @@
+@tailwind base;
+@tailwind components;
+@tailwind utilities;
+
+@layer base {
+  body {
+    @apply bg-[#080d19] text-slate-100 antialiased font-sans;
+    background-color: #080d19;
+  }
+}
+
+/* Crisp, Clean Professional Card & Surface Styling (No Clumsy Blur) */
+.clean-card {
+  background-color: #0f172a;
+  border: 1px solid #1e293b;
+}
+
+.clean-card-subtle {
+  background-color: #0b1120;
+  border: 1px solid #1e293b;
+}
+
+.clean-input {
+  background-color: #0b1120;
+  border: 1px solid #1e293b;
+  color: #f8fafc;
+}
+.clean-input:focus {
+  border-color: #0ea5e9;
+  outline: none;
+}
+
+/* Tactile, Clean Buttons */
+.clean-btn {
+  transition: all 0.15s ease-in-out;
+}
+.clean-btn:active {
+  transform: scale(0.97);
+}
+
+/* Numeric Jump Animations */
+.jump-up {
+  color: #10b981 !important;
+  transition: all 0.2s ease;
+}
+
+.jump-down {
+  color: #f43f5e !important;
+  transition: all 0.2s ease;
+}
+
+/* Custom Clean Scrollbar */
+::-webkit-scrollbar {
+  width: 6px;
+  height: 6px;
+}
+::-webkit-scrollbar-track {
+  background: #080d19;
+}
+::-webkit-scrollbar-thumb {
+  background: #1e293b;
+  border-radius: 4px;
+}
+::-webkit-scrollbar-thumb:hover {
+  background: #334155;
+}
+
+/* Smooth continuous ticker animation */
+@keyframes marquee {
+  0% { transform: translate3d(0, 0, 0); }
+  100% { transform: translate3d(-50%, 0, 0); }
+}
+
+.animate-marquee {
+  display: inline-flex;
+  animation: marquee 28s linear infinite;
+  will-change: transform;
+}
+
+.animate-marquee:hover {
+  animation-play-state: paused;
+}
+
+.no-scrollbar::-webkit-scrollbar {
+  display: none;
+}
+.no-scrollbar {
+  -ms-overflow-style: none;
+  scrollbar-width: none;
+}
+
+.font-mono-num {
+  font-family: ui-monospace, SFMono-Regular, Menlo, Monaco, Consolas, "Liberation Mono", "Courier New", monospace;
+  font-feature-settings: "tnum";
+  font-variant-numeric: tabular-nums;
+}
