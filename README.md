@@ -52,3 +52,20 @@ apex-multi-trading/
 ├── package.json                         # Master workspace package
 └── start.sh                             # 1-Click launcher script (Starts backend + frontend)
 ```
+
+## 4. How to Run & Deploy
+
+### 1-Click Run Locally
+
+```bash
+npm start
+```
+
+This automatically starts the Backend on Port 5001, Frontend on Port 3000, and opens your browser.
+
+### Production Build
+
+```bash
+cd frontend && npm run build
+```
+
