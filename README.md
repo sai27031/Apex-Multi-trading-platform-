@@ -1,4 +1,7 @@
-Apex multi trading/
+## Project Structure
+
+```
+apex-multi-trading/
 ├── backend/
 │   ├── models/
 │   │   ├── ClientPortfolio.js       # Client profiles, cash margins & stock holdings
@@ -13,7 +16,7 @@ Apex multi trading/
 │   │   ├── newsRoutes.js            # Corporate news feeds API
 │   │   └── tradingRoutes.js         # Order routing & ticker management
 │   ├── seeds/
-│   │   └── seedData.js              # 20+ Pre-populated client portfolios & holdings
+│   │   └── seedData.js              # 20+ pre-populated client portfolios & holdings
 │   ├── services/
 │   │   └── realMarketService.js     # Live market quote synchronization
 │   ├── package.json
@@ -48,3 +51,4 @@ Apex multi trading/
 ├── PROJECT_DOCUMENTATION.md             # Complete technical specification
 ├── package.json                         # Master workspace package
 └── start.sh                             # 1-Click launcher script (Starts backend + frontend)
+```
