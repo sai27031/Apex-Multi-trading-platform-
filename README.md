@@ -52,13 +52,28 @@ apex-multi-trading/
 ├── package.json                         # Master workspace package
 └── start.sh                             # 1-Click launcher script (Starts backend + frontend)
 ```
+## Tech Stack
+
+| Layer | Technology | Purpose |
+|---|---|---|
+| **Frontend Framework** | React 18 (SPA) | Dynamic component tree, fast DOM diffing, and state management. |
+| **Build & Dev Tool** | Vite 5 | Instant Hot Module Replacement (HMR) and optimized rollup production bundles. |
+| **Styling & Theme** | Tailwind CSS 3 | Custom dark fintech surface system (`#0b1120`, `#0f172a`, `#1e293b`), responsive grids, and font tabular figures. |
+| **Iconography** | Lucide React | Clean, modern vector icon set. |
+| **Real-Time WebSockets** | Socket.io Client 4.7 | Low-latency duplex communication streaming live market price ticks. |
+| **Charting Engine** | TradingView Embedded Studio | Real-time interactive candlestick charts, 100+ technical indicators (RSI, MACD, EMA), and multi-timeframe analytics. |
+| **HTTP Client** | Axios | REST API communication with backend services. |
+| **Backend Runtime** | Node.js (v18+/v20+) | Asynchronous, event-driven server runtime. |
+| **Backend Framework** | Express.js 4 | High-throughput REST API routing and middleware management. |
+| **WebSocket Server** | Socket.io Server 4.7 | High-frequency live tick broadcaster (1.2s tick intervals). |
+| **Database & ODM** | MongoDB & Mongoose 8 | Document database for client accounts, trades, and portfolio history (with automatic in-memory fallback). |
 
 ## 4. How to Run & Deploy
 
 ### 1-Click Run Locally
 
 ```bash
-npm start
+cd backend && npm start
 ```
 
 This automatically starts the Backend on Port 5001, Frontend on Port 3000, and opens your browser.
